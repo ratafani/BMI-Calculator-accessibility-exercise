@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,95 +16,99 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the weight?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pd8-LD-m3U">
-                                <rect key="frame" x="20" y="109" width="149.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What is the weight?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pd8-LD-m3U">
+                                <rect key="frame" x="20" y="111" width="374" height="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6d-Lu-kvu">
-                                <rect key="frame" x="16" y="54" width="382" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6d-Lu-kvu">
+                                <rect key="frame" x="16" y="54" width="382" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RDz-14-QKL">
-                                <rect key="frame" x="18" y="150" width="378" height="31"/>
+                                <rect key="frame" x="18" y="148" width="378" height="31"/>
+                                <accessibility key="accessibilityConfiguration" hint="the slider for weight"/>
                                 <connections>
                                     <action selector="changeWeightValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="I5k-3k-bxQ"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="77" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtb-Ry-DQa">
-                                <rect key="frame" x="197.5" y="200" width="19" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="77" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtb-Ry-DQa">
+                                <rect key="frame" x="20" y="198" width="374" height="30"/>
+                                <accessibility key="accessibilityConfiguration" hint="in Kilogram"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the height?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpy-If-UPB">
-                                <rect key="frame" x="20" y="261" width="146.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What is the height?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpy-If-UPB">
+                                <rect key="frame" x="20" y="268" width="374" height="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="X4w-rJ-joO">
-                                <rect key="frame" x="18" y="302" width="378" height="31"/>
+                                <rect key="frame" x="18" y="305" width="378" height="31"/>
+                                <accessibility key="accessibilityConfiguration" hint="the slider for height"/>
                                 <connections>
                                     <action selector="changeHeightValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="cTg-GN-cfK"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Underweight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgE-IY-7EJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Underweight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgE-IY-7EJ">
                                 <rect key="frame" x="165.5" y="802" width="248.5" height="60"/>
                                 <color key="backgroundColor" red="0.8424876868935034" green="0.85744550777840489" blue="0.84421652649484891" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="i14-3X-kwt"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.74" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YA1-W6-Upf">
-                                <rect key="frame" x="192" y="352" width="30" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1.74" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YA1-W6-Upf">
+                                <rect key="frame" x="20" y="355" width="375" height="30"/>
+                                <accessibility key="accessibilityConfiguration" hint="in Meter"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="BMI = 15.68" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMm-Ol-MXj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="BMI = 15.68" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMm-Ol-MXj">
                                 <rect key="frame" x="0.0" y="802" width="165.5" height="60"/>
-                                <color key="backgroundColor" red="0.13674383907260274" green="0.54918553240958912" blue="0.96867650750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.13674383907260274" green="0.54918553240958912" blue="0.96867650750000001" alpha="0.45697284218491308" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" red="0.87197666952054798" green="0.0041965694178082175" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.0" green="0.6440724255821918" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="RDz-14-QKL" firstAttribute="leading" secondItem="Vtb-Ry-DQa" secondAttribute="leading" id="0ry-dT-ias"/>
                             <constraint firstItem="rgE-IY-7EJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="1Df-hO-xIU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rgE-IY-7EJ" secondAttribute="trailing" id="1oI-TQ-N3A"/>
-                            <constraint firstItem="X4w-rJ-joO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3ls-7o-gPJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RDz-14-QKL" secondAttribute="trailing" constant="20" id="4Ir-bS-QYy"/>
-                            <constraint firstItem="Wpy-If-UPB" firstAttribute="leading" secondItem="X4w-rJ-joO" secondAttribute="leading" id="4bK-kf-mvE"/>
-                            <constraint firstItem="X4w-rJ-joO" firstAttribute="top" secondItem="Wpy-If-UPB" secondAttribute="bottom" constant="20" id="4jH-Yo-NjL"/>
-                            <constraint firstItem="YA1-W6-Upf" firstAttribute="top" secondItem="X4w-rJ-joO" secondAttribute="bottom" constant="20" id="7K2-pI-wGj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X4w-rJ-joO" secondAttribute="trailing" constant="20" id="A09-EG-fad"/>
+                            <constraint firstItem="RDz-14-QKL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="148" id="453-z1-Nlu"/>
+                            <constraint firstItem="RDz-14-QKL" firstAttribute="leading" secondItem="Pd8-LD-m3U" secondAttribute="leading" id="4UK-L0-tX8"/>
                             <constraint firstItem="KMm-Ol-MXj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AXB-m2-cT5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rgE-IY-7EJ" secondAttribute="bottom" id="Ca4-Yi-7t7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Wpy-If-UPB" secondAttribute="trailing" symbolic="YES" id="OdR-aP-oSJ"/>
+                            <constraint firstItem="X4w-rJ-joO" firstAttribute="top" secondItem="Wpy-If-UPB" secondAttribute="bottom" constant="20" id="CyI-Ys-xlL"/>
+                            <constraint firstItem="RDz-14-QKL" firstAttribute="centerX" secondItem="A6d-Lu-kvu" secondAttribute="centerX" id="EdZ-ij-whh"/>
+                            <constraint firstItem="RDz-14-QKL" firstAttribute="leading" secondItem="Wpy-If-UPB" secondAttribute="leading" id="Ivm-c1-GO0"/>
+                            <constraint firstItem="X4w-rJ-joO" firstAttribute="leading" secondItem="YA1-W6-Upf" secondAttribute="leading" id="TXh-Be-dPl"/>
+                            <constraint firstItem="RDz-14-QKL" firstAttribute="top" secondItem="Pd8-LD-m3U" secondAttribute="bottom" constant="20" id="Tg0-2Y-LiN"/>
                             <constraint firstItem="A6d-Lu-kvu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="UWu-HI-LpH"/>
-                            <constraint firstItem="Vtb-Ry-DQa" firstAttribute="centerX" secondItem="RDz-14-QKL" secondAttribute="centerX" id="V4B-gj-aRb"/>
-                            <constraint firstItem="RDz-14-QKL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Wco-gl-ELP"/>
                             <constraint firstItem="KMm-Ol-MXj" firstAttribute="height" secondItem="rgE-IY-7EJ" secondAttribute="height" id="Wet-Vr-TOU"/>
-                            <constraint firstItem="YA1-W6-Upf" firstAttribute="centerX" secondItem="X4w-rJ-joO" secondAttribute="centerX" id="Z4c-8p-0DW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Pd8-LD-m3U" secondAttribute="trailing" symbolic="YES" id="bau-dv-ONv"/>
+                            <constraint firstItem="X4w-rJ-joO" firstAttribute="trailing" secondItem="Vtb-Ry-DQa" secondAttribute="trailing" id="Wj3-Yu-wpN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A6d-Lu-kvu" secondAttribute="trailing" constant="16" id="erK-P0-6pG"/>
                             <constraint firstItem="A6d-Lu-kvu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fch-L2-iTN"/>
+                            <constraint firstItem="Vtb-Ry-DQa" firstAttribute="top" secondItem="RDz-14-QKL" secondAttribute="bottom" constant="20" id="gEd-Tp-17G"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KMm-Ol-MXj" secondAttribute="bottom" id="jLs-QZ-ote"/>
-                            <constraint firstItem="Wpy-If-UPB" firstAttribute="top" secondItem="Vtb-Ry-DQa" secondAttribute="bottom" constant="40" id="lU6-5Y-mM5"/>
                             <constraint firstItem="rgE-IY-7EJ" firstAttribute="leading" secondItem="KMm-Ol-MXj" secondAttribute="trailing" id="lip-Od-bTw"/>
-                            <constraint firstItem="Pd8-LD-m3U" firstAttribute="top" secondItem="A6d-Lu-kvu" secondAttribute="bottom" constant="20" id="r3A-gL-53i"/>
-                            <constraint firstItem="RDz-14-QKL" firstAttribute="top" secondItem="Pd8-LD-m3U" secondAttribute="bottom" constant="20" id="vhY-2X-R6m"/>
-                            <constraint firstItem="Vtb-Ry-DQa" firstAttribute="top" secondItem="RDz-14-QKL" secondAttribute="bottom" constant="20" id="wgz-Sx-oyQ"/>
-                            <constraint firstItem="Pd8-LD-m3U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="z02-4Q-FQH"/>
+                            <constraint firstItem="X4w-rJ-joO" firstAttribute="centerX" secondItem="YA1-W6-Upf" secondAttribute="centerX" id="o02-NW-se8"/>
+                            <constraint firstItem="YA1-W6-Upf" firstAttribute="top" secondItem="X4w-rJ-joO" secondAttribute="bottom" constant="20" id="p8Q-JK-NnJ"/>
+                            <constraint firstItem="RDz-14-QKL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qmb-R5-Ski"/>
+                            <constraint firstItem="X4w-rJ-joO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="305" id="vx6-sp-xsw"/>
+                            <constraint firstItem="RDz-14-QKL" firstAttribute="trailing" secondItem="Vtb-Ry-DQa" secondAttribute="trailing" id="wVb-3G-ohI"/>
+                            <constraint firstItem="X4w-rJ-joO" firstAttribute="leading" secondItem="Wpy-If-UPB" secondAttribute="leading" id="xjT-qi-HPV"/>
                         </constraints>
                     </view>
                     <connections>
